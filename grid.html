@@ -22,8 +22,10 @@
     <div class="animsition">
       <!-- Header -->
       <div class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
-        <header class="mdl-layout__header mdl-layout__header--waterfall transparent-header">
+        <header class="mdl-layout__header mdl-layout__header--waterfall">
           <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Grid</span>
             <!-- Spacer -->
             <div class="mdl-layout-spacer"></div>
             <!-- Right Menu -->
@@ -31,6 +33,22 @@
               <i class="material-icons">more_vert</i>
             </button>
           </div>
+
+          <div class="mdl-layout__header-row">
+            <span>123 photos</span>
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
+            <nav class="waterfall mdl-navigation">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+                <label class="mdl-button mdl-js-button mdl-button--icon" for="waterfall-exp">
+                  <i class="material-icons">search</i>
+                </label>
+                <div class="mdl-textfield__expandable-holder">
+                  <input class="mdl-textfield__input" type="text" name="sample" id="waterfall-exp" />
+                </div>
+              </div>
+            </nav>
+          </div>    
         </header>
         <!-- Top-right Dropdown Menu -->
         <div class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="top-header-menu">
@@ -111,13 +129,62 @@
         </div>
 
         <!-- Page Content -->
-        <main class="mdl-layout__content launch valign-wrapper"> <!-- vertical align container -->
-          <div class="valign"> <!-- vertical align element -->
-            <h2>GRAVITY</h2>
-            <span>- mobile -</span>
+        <main class="mdl-layout__content gallery-container"> <!-- grid container -->
+
+          <!-- grid with 3 columns -->
+          <div class="mdl-grid gallery">
+            <div class="mdl-cell mdl-cell--4-col">
+              <a href="img/5.jpg" class="swipebox" title="Car"><img src="img/5.jpg" alt="" /></a>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+              <a href="img/2.jpg" class="swipebox" title="Sea"><img src="img/2.jpg" alt="" /></a>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+              <a href="img/3.jpg" class="swipebox" title="Coffee"><img src="img/3.jpg" alt="" /></a>
+            </div>
+          </div>
+
+          <div class="mdl-grid gallery">
+            <!-- grid with 1 column -->
+            <div class="mdl-cell mdl-cell--12-col">
+              <a href="img/6.jpg" class="swipebox" title="Material Design"><img src="img/6.jpg" alt="" /></a>
+            </div>
+          </div>
+
+          <div class="mdl-grid gallery">
+            <!-- grid with 3 columns -->
+            <div class="mdl-cell mdl-cell--4-col">
+              <a href="img/11.jpg" class="swipebox" title="Skull"><img src="img/11.jpg" alt="" /></a>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+              <a href="img/1.jpg" class="swipebox" title="Sky"><img src="img/1.jpg" alt="" /></a>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+              <a href="img/10.jpg" class="swipebox" title="Mountain"><img src="img/10.jpg" alt="" /></a>
+            </div>
+
+            <div class="mdl-grid gallery">
+              <!-- grid with 1 column -->
+              <div class="mdl-cell mdl-cell--12-col">
+                <a href="img/7.jpg" class="swipebox" title="Writing"><img src="img/7.jpg" alt="" /></a>
+              </div>
+            </div>
+
+            <div class="mdl-grid gallery">
+              <!-- grid with 3 columns -->
+              <div class="mdl-cell mdl-cell--4-col">
+                <a href="img/5.jpg" class="swipebox" title="Car"><img src="img/5.jpg" alt="" /></a>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col">
+                <a href="img/2.jpg" class="swipebox" title="Sea"><img src="img/2.jpg" alt="" /></a>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col">
+                <a href="img/3.jpg" class="swipebox" title="Coffee"><img src="img/3.jpg" alt="" /></a>
+              </div>
+            </div>
+            
           </div>
         </main>
-        
       </div>
     </div>
 

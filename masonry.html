@@ -22,14 +22,32 @@
     <div class="animsition">
       <!-- Header -->
       <div class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
-        <header class="mdl-layout__header mdl-layout__header--waterfall transparent-header">
+        <header class="mdl-layout__header mdl-layout__header--waterfall">
           <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Masonry</span>
             <!-- Spacer -->
             <div class="mdl-layout-spacer"></div>
             <!-- Right Menu -->
             <button id="top-header-menu" class="mdl-button mdl-js-button mdl-button--icon">
               <i class="material-icons">more_vert</i>
             </button>
+          </div>
+
+          <div class="mdl-layout__header-row">
+            <span>123 photos</span>
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
+            <nav class="waterfall mdl-navigation">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+                <label class="mdl-button mdl-js-button mdl-button--icon" for="waterfall-exp">
+                  <i class="material-icons">search</i>
+                </label>
+                <div class="mdl-textfield__expandable-holder">
+                  <input class="mdl-textfield__input" type="text" name="sample" id="waterfall-exp" />
+                </div>
+              </div>
+            </nav>
           </div>
         </header>
         <!-- Top-right Dropdown Menu -->
@@ -111,13 +129,26 @@
         </div>
 
         <!-- Page Content -->
-        <main class="mdl-layout__content launch valign-wrapper"> <!-- vertical align container -->
-          <div class="valign"> <!-- vertical align element -->
-            <h2>GRAVITY</h2>
-            <span>- mobile -</span>
-          </div>
+        <main class="mdl-layout__content">
+         
+            <div class="mdl-grid gallery masonry"> <!-- grid container -->
+              <div class="mdl-cell mdl-cell--6-col"> <!-- left column -->
+                <a href="img/11.jpg" class="swipebox" title="Custom Caption"><img src="img/11.jpg" alt="" /></a>
+                <a href="img/2.jpg" class="swipebox" title="Custom Caption"><img src="img/2.jpg" alt="" /></a>
+                <a href="img/3.jpg" class="swipebox" title="Custom Caption"><img src="img/3.jpg" alt="" /></a>
+                <a href="img/5.jpg" class="swipebox" title="Custom Caption"><img src="img/5.jpg" alt="" /></a>
+                <a href="img/1.jpg" class="swipebox" title="Custom Caption"><img src="img/1.jpg" alt="" /></a>
+              </div>
+              <div class="mdl-cell mdl-cell--6-col"> <!-- right column -->
+                <a href="img/4.jpg" class="swipebox" title="Custom Caption"><img src="img/4.jpg" alt="" /></a>
+                <a href="img/10.jpg" class="swipebox" title="Custom Caption"><img src="img/10.jpg" alt="" /></a>
+                <a href="img/8.jpg" class="swipebox" title="Custom Caption"><img src="img/8.jpg" alt="" /></a>
+                <a href="img/7.jpg" class="swipebox" title="Custom Caption"><img src="img/7.jpg" alt="" /></a>
+                <a href="img/2.jpg" class="swipebox" title="Custom Caption"><img src="img/2.jpg" alt="" /></a>
+              </div>
+            </div>
+         
         </main>
-        
       </div>
     </div>
 

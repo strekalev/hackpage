@@ -22,11 +22,19 @@
     <div class="animsition">
       <!-- Header -->
       <div class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
-        <header class="mdl-layout__header mdl-layout__header--waterfall transparent-header">
+        <header class="mdl-layout__header mdl-layout__header--waterfall">
           <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">July</span>
+            <button class="mdl-button mdl-js-button mdl-button--icon">
+              <i class="material-icons">arrow_drop_down</i>
+            </button>
             <!-- Spacer -->
             <div class="mdl-layout-spacer"></div>
             <!-- Right Menu -->
+            <button class="mdl-button mdl-js-button mdl-button--icon">
+              <i class="material-icons">today</i>
+            </button>
             <button id="top-header-menu" class="mdl-button mdl-js-button mdl-button--icon">
               <i class="material-icons">more_vert</i>
             </button>
@@ -111,21 +119,91 @@
         </div>
 
         <!-- Page Content -->
-        <main class="mdl-layout__content launch valign-wrapper"> <!-- vertical align container -->
-          <div class="valign"> <!-- vertical align element -->
-            <h2>GRAVITY</h2>
-            <span>- mobile -</span>
+        <main class="mdl-layout__content">
+          <img src="img/6.jpg" alt=""> <!-- month image -->
+
+          <!-- day container -->
+          <div class="calendar-day">
+            <!-- day date -->
+            <div class="calendar-date">
+              <span>1</span>
+              <span>Sun</span>
+            </div>
+            <!-- day colored activity -->
+            <div class="calendar-activity teal mdl-shadow--1dp">
+              <a id="sa-success" class="mdl-button mdl-js-button"><i class="material-icons">close</i></a>
+              <span>Watch sports</span>
+              <span class="calendar-hour">7-10 PM</span>
+            </div>
+            <div class="clr"></div>
+          </div>
+
+          <div class="calendar-day">
+            <span><strong>This Week (July 2 - 8)</strong></span>
+            <div class="calendar-date">
+              <span class="mdl-color-text--accent">2</span>
+              <span>Mon</span>
+            </div>
+            <div class="calendar-activity red mdl-shadow--1dp">
+              <a id="sa-confirm" class="mdl-button mdl-js-button"><i class="material-icons">close</i></a>
+              <span>Breakfast</span>
+              <span class="calendar-hour">7-8 AM</span>
+            </div>
+            <div class="calendar-activity green mdl-shadow--1dp">
+              <a id="sa-error" class="mdl-button mdl-js-button"><i class="material-icons">close</i></a>
+              <span>Work Meeting</span>
+              <span class="calendar-hour">9-11 AM</span>
+            </div>
+
+            <!-- current moment -->
+            <div class="calendar-activity now">
+              <div class="circle mdl-color--accent"></div>
+              <div class="line mdl-color--accent"></div>
+            </div>
+
+            <div class="calendar-activity cyan mdl-shadow--1dp">
+              <a id="sa-basic" class="mdl-button mdl-js-button"><i class="material-icons">close</i></a>
+              <span>Make reservation for lunch</span>
+            </div>
+            <div class="calendar-activity green mdl-shadow--1dp">
+              <a id="sa-test" class="mdl-button mdl-js-button"><i class="material-icons">close</i></a>
+              <span>Lunch with Mike</span>
+              <span class="calendar-hour">12 - 1:30 PM</span>
+            </div>
+            <div class="clr"></div>
+          </div>
+
+          <div class="calendar-day">
+            <div class="calendar-date">
+              <span>3</span>
+              <span>Tue</span>
+            </div>
+            <div class="calendar-activity cyan mdl-shadow--1dp">
+              <span>Watch Tv shows</span>
+            </div>
+            <div class="calendar-activity green mdl-shadow--1dp">
+              <span>Work meeting</span>
+              <span class="calendar-hour">10-12 AM</span>
+            </div>
+            <div class="calendar-activity red mdl-shadow--1dp">
+              <span>Lunch</span>
+            </div>
+            <div class="calendar-activity teal mdl-shadow--1dp">
+              <span>New haircut!</span>
+              <span class="calendar-hour">5 PM</span>
+            </div>
+            <div class="clr"></div>
           </div>
         </main>
-        
       </div>
     </div>
 
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.5.2/js/jquery.animsition.js"></script>
     <script src="js/sweetalert.min.js"></script> 
-    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.3/material.min.js"></script>
     <script src="js/jquery.swipebox.min.js"></script>
     <script src="js/function.js"></script>
+    <script src="js/sweet.js"></script>
   </body>
 </html>

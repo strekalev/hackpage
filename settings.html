@@ -17,13 +17,15 @@
     <link rel="stylesheet" href="css/swipebox.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-
+  
   <body>
     <div class="animsition">
       <!-- Header -->
       <div class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
-        <header class="mdl-layout__header mdl-layout__header--waterfall transparent-header">
+        <header class="mdl-layout__header mdl-layout__header--waterfall">
           <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Settings</span>
             <!-- Spacer -->
             <div class="mdl-layout-spacer"></div>
             <!-- Right Menu -->
@@ -111,13 +113,100 @@
         </div>
 
         <!-- Page Content -->
-        <main class="mdl-layout__content launch valign-wrapper"> <!-- vertical align container -->
-          <div class="valign"> <!-- vertical align element -->
-            <h2>GRAVITY</h2>
-            <span>- mobile -</span>
-          </div>
+        <main class="mdl-layout__content settings">
+
+          <p class="title">Wireless & Network</p>
+          <ul>
+            <li>
+              <i class="material-icons">wifi</i> 
+              <span>Wi-Fi</span>
+              <!-- switch -->
+              <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+                <input type="checkbox" id="switch-1" class="mdl-switch__input" checked />
+                <span class="mdl-switch__label"></span>
+              </label>
+              <div class="clr"></div>
+            </li> 
+
+            <li>
+              <i class="material-icons">bluetooth</i>
+              <span>Bluetooth</span>
+              <!-- switch -->
+              <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-2">
+                <input type="checkbox" id="switch-2" class="mdl-switch__input" />
+                <span class="mdl-switch__label"></span>
+              </label>
+              <div class="clr"></div>
+            </li>
+
+            <li>
+              <i class="material-icons">data_usage</i>
+              <span>Data usage</span>
+              <!-- switch -->
+              <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-3">
+                <input type="checkbox" id="switch-3" class="mdl-switch__input" />
+                <span class="mdl-switch__label"></span>
+              </label>
+              <div class="clr"></div>
+            </li> 
+          </ul>
+          
+          <p class="title">Device</p>
+
+          <ul>
+            <li>
+              <i class="material-icons">brightness_medium</i>
+              <span>Display</span>
+              <!-- slider -->
+              <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="85" tabindex="0"/>
+              <div class="clr"></div>
+            </li> 
+
+            <li>
+              <i class="material-icons">notifications_off</i>
+              <span>Sound</span>
+              <!-- slider -->
+              <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="0" tabindex="0"/>
+              <div class="clr"></div>
+            </li>
+
+            <li><i class="material-icons">storage</i><span>Storage</span><div class="clr"></div></li> 
+
+            <li>
+              <i class="material-icons">battery_std</i>
+              <span>Battery</span>
+              <!-- toggle -->
+              <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="setting-toggle-1">
+                <input type="checkbox" id="setting-toggle-1" class="mdl-icon-toggle__input" checked />
+                <i class="mdl-icon-toggle__label material-icons">radio_button_checked</i>
+              </label>
+              <div class="clr"></div>
+            </li>
+
+            <li>
+              <i class="material-icons">apps</i>
+              <span>Apps</span>
+              <!-- toggle -->
+              <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="setting-toggle-2">
+                <input type="checkbox" id="setting-toggle-2" class="mdl-icon-toggle__input" checked />
+                <i class="mdl-icon-toggle__label material-icons">check</i>
+              </label>
+              <div class="clr"></div>
+            </li> 
+
+            <li><i class="material-icons">access_time</i><span>Date & time</span><div class="clr"></div></li>
+
+            <li><i class="material-icons">developer_mode</i><span>Developer options</span><div class="clr"></div></li> 
+          </ul>
+
+          <p class="title">Account</p>
+
+          <ul>
+            <li><i class="material-icons">android</i><span>Google</span><div class="clr"></div></li> 
+
+            <li><i class="material-icons">add</i><span>Add a Account</span><div class="clr"></div></li> 
+          </ul>
         </main>
-        
       </div>
     </div>
 

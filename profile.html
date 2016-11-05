@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js">
-  <head>
+    <head>
     <meta charset="utf-8">
     <title>Gravity</title>
     <meta name="description" content="">
@@ -17,16 +17,18 @@
     <link rel="stylesheet" href="css/swipebox.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-
-  <body>
+  
+    <body>
     <div class="animsition">
-      <!-- Header -->
       <div class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
-        <header class="mdl-layout__header mdl-layout__header--waterfall transparent-header">
+        <header class="mdl-layout__header mdl-layout__header--waterfall">
           <div class="mdl-layout__header-row">
             <!-- Spacer -->
             <div class="mdl-layout-spacer"></div>
             <!-- Right Menu -->
+            <button class="mdl-button mdl-js-button mdl-button--icon">
+              <i class="material-icons">edit</i>
+            </button>
             <button id="top-header-menu" class="mdl-button mdl-js-button mdl-button--icon">
               <i class="material-icons">more_vert</i>
             </button>
@@ -110,22 +112,139 @@
           </nav>
         </div>
 
-        <!-- Page Content -->
-        <main class="mdl-layout__content launch valign-wrapper"> <!-- vertical align container -->
-          <div class="valign"> <!-- vertical align element -->
-            <h2>GRAVITY</h2>
-            <span>- mobile -</span>
-          </div>
-        </main>
-        
+      <!-- Page Content -->
+      <main class="mdl-layout__content mdl-color--white">  
+      <div class="profile-page">  
+        <img src="img/4.jpg" alt="">
+        <div class="contact-info">
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+            <i class="material-icons">star</i>
+          </button>
+          <h3>Jane Lee</h3>  
+        </div>
       </div>
-    </div>
 
+        <div class="contact-about">
+          <div class="mdl-card mdl-shadow--2dp about">
+            <h4>About Me</h4>
+            <p>We challenged ourselves to create a visual language for our users that synthesizes the classic principles of good design with the innovation and possibility of technology and science.</p>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+              Follow
+            </button>
+          </div>
+          <div class="mdl-card mdl-shadow--2dp">
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--4-col">
+                <a class="no-accent-color" href="tel:1234567890"><i class="material-icons">call</i></a>
+                <span>Call</span>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col">
+                <a class="no-accent-color" href="sms://1234567890"><i class="material-icons">message</i></a>
+                <span>Message</span>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col">
+                <a><i class="material-icons">favorite</i></a>
+                <span>Like</span>
+              </div>
+            </div>
+          </div>
+          <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+            <thead>
+              <tr>
+                <th class="mdl-data-table__cell--non-numeric">Things</th>
+                <th>Hour</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Work</td>
+                <td>8 AM</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Shop</td>
+                <td>4 PM</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Hobbies</td>
+                <td>6 PM</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Dinner</td>
+                <td>8 PM</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Movie</td>
+                <td>10 PM</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="mdl-card mdl-shadow--2dp movie">
+          <img src="img/9.jpg" alt="">
+            <div id="p1" class="mdl-progress mdl-js-progress" style="width:100%;"></div>
+            <div class="movie-controller">
+              <button class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">play_arrow</i>
+              </button>
+              <span><strong>54:26</strong> / 1:15:30</span>
+              <button class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">fullscreen</i>
+              </button>
+              <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0"/>
+              <div class="clr"></div>
+            </div>
+          </div>
+
+          <div class="mdl-card mdl-shadow--2dp weather">
+            <span>11:57 AM</span>
+            <h2>26</h2>
+            <button class="mdl-button mdl-js-button mdl-button--icon left">
+                <i class="material-icons">chevron_left</i>
+            </button>
+            <button class="mdl-button mdl-js-button mdl-button--icon right">
+                <i class="material-icons">chevron_right</i>
+            </button>
+            <span>Sunny</span>
+            <div class="weather-info">
+              <h4>Mountain View</h4>
+              <span>California</span>
+            </div>
+          </div>
+
+          <span class="title"><strong>Latest Uploads</strong></span>
+          <div class="mdl-card mdl-shadow--2dp latest-images gallery-container">
+            <div class="mdl-grid gallery">
+              <div class="mdl-cell mdl-cell--4-col">
+                <a href="img/5.jpg" class="swipebox" title="Car"><img src="img/5.jpg" alt=""></a>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col">
+                <a href="img/2.jpg" class="swipebox" title="Sea"><img src="img/2.jpg" alt=""></a>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col">
+                <a href="img/3.jpg" class="swipebox" title="Coffee"><img src="img/3.jpg" alt=""></a>
+              </div>
+            </div>
+            <div class="mdl-grid gallery">
+              <div class="mdl-cell mdl-cell--12-col">
+                <a href="img/6.jpg" class="swipebox" title="Material Design"><img src="img/6.jpg" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    </div>
+    
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.5.2/js/jquery.animsition.js"></script>
     <script src="js/sweetalert.min.js"></script> 
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
     <script src="js/jquery.swipebox.min.js"></script>
     <script src="js/function.js"></script>
+    <script>
+      document.querySelector('#p1').addEventListener('mdl-componentupgraded', function() {
+        this.MaterialProgress.setProgress(77);
+      });
+    </script>
   </body>
 </html>

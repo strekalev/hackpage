@@ -20,13 +20,18 @@
 
   <body>
     <div class="animsition">
-      <!-- Header -->
       <div class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
-        <header class="mdl-layout__header mdl-layout__header--waterfall transparent-header">
+        <header class="mdl-layout__header mdl-layout__header--waterfall">
           <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">John Lee</span>
             <!-- Spacer -->
             <div class="mdl-layout-spacer"></div>
             <!-- Right Menu -->
+            <button class="mdl-button mdl-js-button mdl-button--icon">
+              <i class="material-icons">videocam</i>
+            </button>
+            <a class="no-accent-color mdl-button mdl-js-button mdl-button--icon" href="tel:1234567890"><i class="material-icons">call</i></a>
             <button id="top-header-menu" class="mdl-button mdl-js-button mdl-button--icon">
               <i class="material-icons">more_vert</i>
             </button>
@@ -111,13 +116,113 @@
         </div>
 
         <!-- Page Content -->
-        <main class="mdl-layout__content launch valign-wrapper"> <!-- vertical align container -->
-          <div class="valign"> <!-- vertical align element -->
-            <h2>GRAVITY</h2>
-            <span>- mobile -</span>
+        <main class="mdl-layout__content">
+
+          <div class="chat">
+            <ul>
+
+              <li class="message-right"> <!-- right message -->
+                <img src="img/user.jpg" alt="" class="minilogo mdl-shadow--2dp"> <!-- user -->
+                <div class="message mdl-shadow--2dp mdl-color--primary mdl-color-text--white">
+                  <p>Hello! The brown fox jumps over.</p> <!-- message text -->
+                  <span>12 min</span> <!-- message time -->
+                </div>
+              </li>
+
+              <li class="message-left"> <!-- left message -->
+                <img src="img/sub-user.jpg" alt="" class="minilogo mdl-shadow--2dp"> <!-- user -->
+                <div class="message mdl-shadow--2dp"> 
+                  <p>The quick, brown fox jumps over a lazy dog.</p> <!-- message text -->
+                  <span>8 min</span> <!-- message time -->
+                </div>
+              </li>
+
+              <li class="message-right">
+                <img src="img/user.jpg" alt="" class="minilogo mdl-shadow--2dp">
+                <div class="message mdl-shadow--2dp mdl-color--primary mdl-color-text--white">
+                  <p>Quick, Baz, get my woven!</p>
+                  <span>7 min</span>
+                </div>
+              </li>
+
+              <li class="message-left">
+                <img src="img/sub-user.jpg" alt="" class="minilogo mdl-shadow--2dp">
+                <div class="message mdl-shadow--2dp">
+                  <p>Call me now!</p>
+                  <span>6 min</span>
+                </div>
+              </li>
+
+              <li class="message-right">
+                <img src="img/user.jpg" alt="" class="minilogo mdl-shadow--2dp">
+                <div class="message mdl-shadow--2dp mdl-color--primary mdl-color-text--white">
+                  <p>Get my woven...</p>
+                  <span>5 min</span>
+                </div>
+              </li>
+
+              <li class="message-right">
+                <img src="img/sub-user.jpg" alt="" class="minilogo mdl-shadow--2dp">
+                <div class="message mdl-shadow--2dp mdl-color--primary mdl-color-text--white">
+                  <p>Ok! You're right!</p>
+                  <span>4 min</span>
+                </div>
+              </li>
+
+              <li class="message-left">
+                <img src="img/user.jpg" alt="" class="minilogo mdl-shadow--2dp">
+                <div class="message mdl-shadow--2dp">
+                  <p>Quick zephyrs blow, vexing daft Jim.</p>
+                  <span>3 min</span>
+                </div>
+              </li>
+
+              <li class="message-left">
+                <img src="img/sub-user.jpg" alt="" class="minilogo mdl-shadow--2dp">
+                <div class="message mdl-shadow--2dp">
+                  <p>Junk MTV quiz graced...</p>
+                  <span>2 min</span>
+                </div>
+              </li>
+
+              <li class="message-left">
+                <img src="img/user.jpg" alt="" class="minilogo mdl-shadow--2dp">
+                <div class="message mdl-shadow--2dp">
+                  <p>Bawds jog!</p>
+                  <span>1 min</span>
+                </div>
+              </li>
+
+              <li class="message-right">
+                <img src="img/sub-user.jpg" alt="" class="minilogo mdl-shadow--2dp">
+                <div class="message mdl-shadow--2dp mdl-color--primary mdl-color-text--white">
+                  <p>Ok! You're right!</p>
+                  <span>Now</span>
+                </div>
+              </li>
+
+            </ul>
           </div>
+
+          <!-- write message fixed bottom -->
+          <div class="write-message mdl-shadow--2dp">
+            <form action="#">
+              <button class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">attach_file</i>
+              </button>
+
+              <div class="mdl-textfield mdl-js-textfield textfield-demo">
+                <input class="mdl-textfield__input" type="text" id="sample3" />
+                <label class="mdl-textfield__label" for="sample3">Type message...</label>
+              </div>
+            </form>
+            
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored send">
+              <i class="material-icons">send</i>
+            </button>
+          </div>
+
         </main>
-        
       </div>
     </div>
 
